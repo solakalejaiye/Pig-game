@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body {
+    background-color: snow;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    font-family: 'poppins' sans-serif;
+    position: relative;
+    
+    
+}
+
+.container {
+    position: absolute;
+    margin: 0 auto;
+    display: flex;
+    top: 50%;
+    left: 50%;
+    width: 1000px;
+    background: #fff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transform: translate(-50%, -50%);
+    font-family: 'poppins', sans-serif;  
+    
+}
+
+
+
+.central {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.player-0-panel, .player-1-panel {
+    flex: 1;
+    text-align: center;
+    padding: 10%;
+    
+
+}
+
+.player-name {
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 200;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.player-score {
+    font-size: 64px;
+    font-weight: 200;
+    margin-bottom: 48px; 
+    position: relative;
+}   
+
+.active {
+    background-color: rgba(236, 236, 236, 0.8);
+    font-weight: 400;
+}
+
+.active .player-name {
+    font-weight: 400;
+}
+
+
+.active .player-name::after {
+    content: "\2022";
+    font-size: 47px;
+    position: absolute;
+    color: #EB4D4D;
+    top: -7px;
+    right: 10px;
+    
+}
+
+i {
+    padding: 12px;
+    font-weight: 300;
+    color: #EB4D4D;
+}
+
+button {
+    background: none;
+    border: none;
+    font-size: 21px;
+    font-weight: 400;
+    font-family: 'poppins', sans-serif;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.8);  
+}
+
+.btn-new {
+    top: 10%;
+    
+}
+
+.btn-roll {
+    top: 62%;
+    
+}
+
+.btn-hold {
+    top: 72%;
+    
+}
+
+.dice {
+    height: 100px;
+    top: 30%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+
+}
+
+.current-box {
+    background-color: #EB4D4D;
+    color: #fff;
+    width: 40%;
+    margin: 20px auto;
+    padding: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.winner {
+    color: #EB4D4D;
+}
+
+.winner .player-name {
+    font-weight: 300;
+}
